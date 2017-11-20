@@ -1,6 +1,9 @@
 version 'unspecified'
 
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.input.utilities.Fredrik'
 
 sourceCompatibility = 9
 
@@ -11,5 +14,5 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile project(":Springboot")
+    compile project(":springboot")
 }
