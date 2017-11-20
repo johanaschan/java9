@@ -8,6 +8,18 @@ repositories {
     mavenCentral()
 }
 
+ext.moduleName = 'se.ostsallad'
+
+compileJava {
+    inputs.property("moduleName", moduleName)
+    doFirst {
+        options.compilerArgs = [
+                '--module-path', classpath.asPath,
+        ]
+        classpath = files()
+    }
+}
+
 dependencies {
     compile project(":Johan")
     testCompile group: 'junit', name: 'junit', version: '4.12'
