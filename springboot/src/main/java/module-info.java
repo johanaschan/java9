@@ -1,3 +1,3 @@
-module com.input.springboot.main {
+module com.input.springboot {
     exports com.input.springboot;
 }

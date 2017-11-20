@@ -12,7 +12,17 @@ repositories {
     mavenCentral()
 }
 
+compileJava {
+    inputs.property("moduleName", moduleName)
+    doFirst {
+        options.compilerArgs = [
+                '--module-path', classpath.asPath,
+        ]
+        classpath = files()
+    }
+}
+
 dependencies {
+    implementation project(':springboot')
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile project(":springboot")
 }
