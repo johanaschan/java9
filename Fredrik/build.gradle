@@ -1,6 +1,9 @@
 version 'unspecified'
 
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'com.input.utilities.Fredrik'
 
 sourceCompatibility = 9
 
