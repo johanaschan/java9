@@ -16,3 +16,7 @@ include 'services:webservice'
 */
 
 rootProject.name = 'java9'
+include 'Fredrik'
+include 'Henrik'
+include 'Johan'
+
