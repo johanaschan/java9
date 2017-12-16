@@ -7,6 +7,7 @@ mainClassName = 'com.input.utilities.Fredrik'
 
 sourceCompatibility = 9
 
+ext.moduleName = "Fredrik"
 
 repositories {
     mavenCentral()
